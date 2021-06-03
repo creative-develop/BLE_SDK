@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		745B60BD2668D3FE00D2D4C7 /* libCRPC300SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 745B60BC2668D3FE00D2D4C7 /* libCRPC300SDK.a */; };
+		7478F86825A2AF1B00246C58 /* CRProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 7478F86725A2AF1B00246C58 /* CRProgress.m */; };
+		747A28F1259DAF76001425A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A28F0259DAF76001425A4 /* AppDelegate.m */; };
+		747A28F4259DAF76001425A4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A28F3259DAF76001425A4 /* SceneDelegate.m */; };
+		747A28F7259DAF76001425A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A28F6259DAF76001425A4 /* ViewController.m */; };
+		747A28FA259DAF76001425A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747A28F8259DAF76001425A4 /* Main.storyboard */; };
+		747A28FC259DAF77001425A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747A28FB259DAF77001425A4 /* Assets.xcassets */; };
+		747A28FF259DAF77001425A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747A28FD259DAF77001425A4 /* LaunchScreen.storyboard */; };
+		747A2902259DAF77001425A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A2901259DAF77001425A4 /* main.m */; };
+		747A290D259DAFA8001425A4 /* CRPC200ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A290B259DAFA8001425A4 /* CRPC200ViewController.m */; };
+		747A290E259DAFA8001425A4 /* CRPC200ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 747A290C259DAFA8001425A4 /* CRPC200ViewController.xib */; };
+		747A2925259DB019001425A4 /* CRECGResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A291E259DB019001425A4 /* CRECGResultModel.m */; };
+		747A2926259DB019001425A4 /* CRPC80BDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A291F259DB019001425A4 /* CRPC80BDisplayView.m */; };
+		747A2927259DB019001425A4 /* CRResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A2921259DB019001425A4 /* CRResult.m */; };
+		747A2928259DB019001425A4 /* CRHeartLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A2924259DB019001425A4 /* CRHeartLiveView.m */; };
+		747A2930259DC330001425A4 /* CRHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A292F259DC330001425A4 /* CRHttpRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		745B60BC2668D3FE00D2D4C7 /* libCRPC300SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCRPC300SDK.a; sourceTree = "<group>"; };
+		7478F86625A2AF1B00246C58 /* CRProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRProgress.h; sourceTree = "<group>"; };
+		7478F86725A2AF1B00246C58 /* CRProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRProgress.m; sourceTree = "<group>"; };
+		747A28EC259DAF76001425A4 /* PC-200Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PC-200Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		747A28EF259DAF76001425A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		747A28F0259DAF76001425A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		747A28F2259DAF76001425A4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		747A28F3259DAF76001425A4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		747A28F5259DAF76001425A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		747A28F6259DAF76001425A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		747A28F9259DAF76001425A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		747A28FB259DAF77001425A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		747A28FE259DAF77001425A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		747A2900259DAF77001425A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747A2901259DAF77001425A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		747A290A259DAFA8001425A4 /* CRPC200ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPC200ViewController.h; sourceTree = "<group>"; };
+		747A290B259DAFA8001425A4 /* CRPC200ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPC200ViewController.m; sourceTree = "<group>"; };
+		747A290C259DAFA8001425A4 /* CRPC200ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRPC200ViewController.xib; sourceTree = "<group>"; };
+		747A2911259DAFED001425A4 /* CRBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBleDevice.h; sourceTree = "<group>"; };
+		747A2913259DAFED001425A4 /* CRPC_300SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPC_300SDK.h; sourceTree = "<group>"; };
+		747A2917259DAFED001425A4 /* CRBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBlueToothManager.h; sourceTree = "<group>"; };
+		747A291D259DB019001425A4 /* CRECGResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRECGResultModel.h; sourceTree = "<group>"; };
+		747A291E259DB019001425A4 /* CRECGResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRECGResultModel.m; sourceTree = "<group>"; };
+		747A291F259DB019001425A4 /* CRPC80BDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPC80BDisplayView.m; sourceTree = "<group>"; };
+		747A2920259DB019001425A4 /* CRPC80BDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPC80BDisplayView.h; sourceTree = "<group>"; };
+		747A2921259DB019001425A4 /* CRResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRResult.m; sourceTree = "<group>"; };
+		747A2922259DB019001425A4 /* CRResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRResult.h; sourceTree = "<group>"; };
+		747A2923259DB019001425A4 /* CRHeartLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHeartLiveView.h; sourceTree = "<group>"; };
+		747A2924259DB019001425A4 /* CRHeartLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRHeartLiveView.m; sourceTree = "<group>"; };
+		747A292E259DC330001425A4 /* CRHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRHttpRequest.h; sourceTree = "<group>"; };
+		747A292F259DC330001425A4 /* CRHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRHttpRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		747A28E9259DAF76001425A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745B60BD2668D3FE00D2D4C7 /* libCRPC300SDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		747A28E3259DAF76001425A4 = {
+			isa = PBXGroup;
+			children = (
+				747A28EE259DAF76001425A4 /* PC-200Demo */,
+				747A28ED259DAF76001425A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		747A28ED259DAF76001425A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				747A28EC259DAF76001425A4 /* PC-200Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		747A28EE259DAF76001425A4 /* PC-200Demo */ = {
+			isa = PBXGroup;
+			children = (
+				747A28EF259DAF76001425A4 /* AppDelegate.h */,
+				747A28F0259DAF76001425A4 /* AppDelegate.m */,
+				747A28F2259DAF76001425A4 /* SceneDelegate.h */,
+				747A28F3259DAF76001425A4 /* SceneDelegate.m */,
+				747A28F5259DAF76001425A4 /* ViewController.h */,
+				747A28F6259DAF76001425A4 /* ViewController.m */,
+				747A290A259DAFA8001425A4 /* CRPC200ViewController.h */,
+				747A290B259DAFA8001425A4 /* CRPC200ViewController.m */,
+				747A290C259DAFA8001425A4 /* CRPC200ViewController.xib */,
+				747A2923259DB019001425A4 /* CRHeartLiveView.h */,
+				747A2924259DB019001425A4 /* CRHeartLiveView.m */,
+				747A2920259DB019001425A4 /* CRPC80BDisplayView.h */,
+				747A291F259DB019001425A4 /* CRPC80BDisplayView.m */,
+				747A291D259DB019001425A4 /* CRECGResultModel.h */,
+				747A291E259DB019001425A4 /* CRECGResultModel.m */,
+				747A2922259DB019001425A4 /* CRResult.h */,
+				747A2921259DB019001425A4 /* CRResult.m */,
+				747A292E259DC330001425A4 /* CRHttpRequest.h */,
+				747A292F259DC330001425A4 /* CRHttpRequest.m */,
+				7478F86625A2AF1B00246C58 /* CRProgress.h */,
+				7478F86725A2AF1B00246C58 /* CRProgress.m */,
+				747A2910259DAFED001425A4 /* SDK */,
+				747A28F8259DAF76001425A4 /* Main.storyboard */,
+				747A28FB259DAF77001425A4 /* Assets.xcassets */,
+				747A28FD259DAF77001425A4 /* LaunchScreen.storyboard */,
+				747A2900259DAF77001425A4 /* Info.plist */,
+				747A2901259DAF77001425A4 /* main.m */,
+			);
+			path = "PC-200Demo";
+			sourceTree = "<group>";
+		};
+		747A2910259DAFED001425A4 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				747A2917259DAFED001425A4 /* CRBlueToothManager.h */,
+				747A2911259DAFED001425A4 /* CRBleDevice.h */,
+				747A2913259DAFED001425A4 /* CRPC_300SDK.h */,
+				745B60BC2668D3FE00D2D4C7 /* libCRPC300SDK.a */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		747A28EB259DAF76001425A4 /* PC-200Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747A2905259DAF77001425A4 /* Build configuration list for PBXNativeTarget "PC-200Demo" */;
+			buildPhases = (
+				747A28E8259DAF76001425A4 /* Sources */,
+				747A28E9259DAF76001425A4 /* Frameworks */,
+				747A28EA259DAF76001425A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PC-200Demo";
+			productName = "PC-200Demo";
+			productReference = 747A28EC259DAF76001425A4 /* PC-200Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		747A28E4259DAF76001425A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					747A28EB259DAF76001425A4 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 747A28E7259DAF76001425A4 /* Build configuration list for PBXProject "PC-200Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 747A28E3259DAF76001425A4;
+			productRefGroup = 747A28ED259DAF76001425A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				747A28EB259DAF76001425A4 /* PC-200Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		747A28EA259DAF76001425A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747A28FF259DAF77001425A4 /* LaunchScreen.storyboard in Resources */,
+				747A28FC259DAF77001425A4 /* Assets.xcassets in Resources */,
+				747A28FA259DAF76001425A4 /* Main.storyboard in Resources */,
+				747A290E259DAFA8001425A4 /* CRPC200ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		747A28E8259DAF76001425A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747A2928259DB019001425A4 /* CRHeartLiveView.m in Sources */,
+				747A28F7259DAF76001425A4 /* ViewController.m in Sources */,
+				747A2927259DB019001425A4 /* CRResult.m in Sources */,
+				747A28F1259DAF76001425A4 /* AppDelegate.m in Sources */,
+				747A2902259DAF77001425A4 /* main.m in Sources */,
+				747A2930259DC330001425A4 /* CRHttpRequest.m in Sources */,
+				747A28F4259DAF76001425A4 /* SceneDelegate.m in Sources */,
+				747A290D259DAFA8001425A4 /* CRPC200ViewController.m in Sources */,
+				7478F86825A2AF1B00246C58 /* CRProgress.m in Sources */,
+				747A2925259DB019001425A4 /* CRECGResultModel.m in Sources */,
+				747A2926259DB019001425A4 /* CRPC80BDisplayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		747A28F8259DAF76001425A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				747A28F9259DAF76001425A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		747A28FD259DAF77001425A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				747A28FE259DAF77001425A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		747A2903259DAF77001425A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		747A2904259DAF77001425A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		747A2906259DAF77001425A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L79NFY6463;
+				INFOPLIST_FILE = "PC-200Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PC-200Demo/SDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creative.PC-200Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		747A2907259DAF77001425A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L79NFY6463;
+				INFOPLIST_FILE = "PC-200Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PC-200Demo/SDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creative.PC-200Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		747A28E7259DAF76001425A4 /* Build configuration list for PBXProject "PC-200Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747A2903259DAF77001425A4 /* Debug */,
+				747A2904259DAF77001425A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		747A2905259DAF77001425A4 /* Build configuration list for PBXNativeTarget "PC-200Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747A2906259DAF77001425A4 /* Debug */,
+				747A2907259DAF77001425A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 747A28E4259DAF76001425A4 /* Project object */;
+}

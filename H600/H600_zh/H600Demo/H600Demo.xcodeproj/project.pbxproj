@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7431D95025AD3FF8007EBCEC /* libCRH600SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7431D94C25AD3FF7007EBCEC /* libCRH600SDK.a */; };
+		7466284025A83059001BA9A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7466283F25A83059001BA9A9 /* AppDelegate.m */; };
+		7466284325A83059001BA9A9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7466284225A83059001BA9A9 /* SceneDelegate.m */; };
+		7466284625A83059001BA9A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7466284525A83059001BA9A9 /* ViewController.m */; };
+		7466284925A83059001BA9A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7466284725A83059001BA9A9 /* Main.storyboard */; };
+		7466284B25A83059001BA9A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7466284A25A83059001BA9A9 /* Assets.xcassets */; };
+		7466284E25A8305A001BA9A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7466284C25A8305A001BA9A9 /* LaunchScreen.storyboard */; };
+		7466285125A8305A001BA9A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7466285025A8305A001BA9A9 /* main.m */; };
+		7466286825A83094001BA9A9 /* CRH600ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7466286625A83094001BA9A9 /* CRH600ViewController.m */; };
+		7466286925A83094001BA9A9 /* CRH600ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7466286725A83094001BA9A9 /* CRH600ViewController.xib */; };
+		7466287925A83886001BA9A9 /* CRResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7466287325A83886001BA9A9 /* CRResult.m */; };
+		7466287A25A83886001BA9A9 /* CRECGResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7466287525A83886001BA9A9 /* CRECGResultModel.m */; };
+		7466287B25A83886001BA9A9 /* CRPC80BDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7466287625A83886001BA9A9 /* CRPC80BDisplayView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7431D94C25AD3FF7007EBCEC /* libCRH600SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCRH600SDK.a; sourceTree = "<group>"; };
+		7431D94D25AD3FF8007EBCEC /* CRBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBleDevice.h; sourceTree = "<group>"; };
+		7431D94E25AD3FF8007EBCEC /* CRBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBlueToothManager.h; sourceTree = "<group>"; };
+		7431D94F25AD3FF8007EBCEC /* CRH600SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRH600SDK.h; sourceTree = "<group>"; };
+		7466283B25A83059001BA9A9 /* H600Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H600Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7466283E25A83059001BA9A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7466283F25A83059001BA9A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7466284125A83059001BA9A9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		7466284225A83059001BA9A9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		7466284425A83059001BA9A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7466284525A83059001BA9A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7466284825A83059001BA9A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7466284A25A83059001BA9A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7466284D25A8305A001BA9A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7466284F25A8305A001BA9A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7466285025A8305A001BA9A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7466286525A83094001BA9A9 /* CRH600ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRH600ViewController.h; sourceTree = "<group>"; };
+		7466286625A83094001BA9A9 /* CRH600ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRH600ViewController.m; sourceTree = "<group>"; };
+		7466286725A83094001BA9A9 /* CRH600ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRH600ViewController.xib; sourceTree = "<group>"; };
+		7466287325A83886001BA9A9 /* CRResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRResult.m; sourceTree = "<group>"; };
+		7466287425A83886001BA9A9 /* CRPC80BDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPC80BDisplayView.h; sourceTree = "<group>"; };
+		7466287525A83886001BA9A9 /* CRECGResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRECGResultModel.m; sourceTree = "<group>"; };
+		7466287625A83886001BA9A9 /* CRPC80BDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPC80BDisplayView.m; sourceTree = "<group>"; };
+		7466287725A83886001BA9A9 /* CRResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRResult.h; sourceTree = "<group>"; };
+		7466287825A83886001BA9A9 /* CRECGResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRECGResultModel.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7466283825A83059001BA9A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7431D95025AD3FF8007EBCEC /* libCRH600SDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7466283225A83059001BA9A9 = {
+			isa = PBXGroup;
+			children = (
+				7466283D25A83059001BA9A9 /* H600Demo */,
+				7466283C25A83059001BA9A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7466283C25A83059001BA9A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7466283B25A83059001BA9A9 /* H600Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7466283D25A83059001BA9A9 /* H600Demo */ = {
+			isa = PBXGroup;
+			children = (
+				7466283E25A83059001BA9A9 /* AppDelegate.h */,
+				7466283F25A83059001BA9A9 /* AppDelegate.m */,
+				7466284125A83059001BA9A9 /* SceneDelegate.h */,
+				7466284225A83059001BA9A9 /* SceneDelegate.m */,
+				7466284425A83059001BA9A9 /* ViewController.h */,
+				7466284525A83059001BA9A9 /* ViewController.m */,
+				7466286525A83094001BA9A9 /* CRH600ViewController.h */,
+				7466286625A83094001BA9A9 /* CRH600ViewController.m */,
+				7466286725A83094001BA9A9 /* CRH600ViewController.xib */,
+				7466287825A83886001BA9A9 /* CRECGResultModel.h */,
+				7466287525A83886001BA9A9 /* CRECGResultModel.m */,
+				7466287425A83886001BA9A9 /* CRPC80BDisplayView.h */,
+				7466287625A83886001BA9A9 /* CRPC80BDisplayView.m */,
+				7466287725A83886001BA9A9 /* CRResult.h */,
+				7466287325A83886001BA9A9 /* CRResult.m */,
+				7466285825A8306B001BA9A9 /* SDK */,
+				7466284725A83059001BA9A9 /* Main.storyboard */,
+				7466284A25A83059001BA9A9 /* Assets.xcassets */,
+				7466284C25A8305A001BA9A9 /* LaunchScreen.storyboard */,
+				7466284F25A8305A001BA9A9 /* Info.plist */,
+				7466285025A8305A001BA9A9 /* main.m */,
+			);
+			path = H600Demo;
+			sourceTree = "<group>";
+		};
+		7466285825A8306B001BA9A9 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				7431D94D25AD3FF8007EBCEC /* CRBleDevice.h */,
+				7431D94E25AD3FF8007EBCEC /* CRBlueToothManager.h */,
+				7431D94F25AD3FF8007EBCEC /* CRH600SDK.h */,
+				7431D94C25AD3FF7007EBCEC /* libCRH600SDK.a */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7466283A25A83059001BA9A9 /* H600Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7466285425A8305A001BA9A9 /* Build configuration list for PBXNativeTarget "H600Demo" */;
+			buildPhases = (
+				7466283725A83059001BA9A9 /* Sources */,
+				7466283825A83059001BA9A9 /* Frameworks */,
+				7466283925A83059001BA9A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H600Demo;
+			productName = H600Demo;
+			productReference = 7466283B25A83059001BA9A9 /* H600Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7466283325A83059001BA9A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					7466283A25A83059001BA9A9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 7466283625A83059001BA9A9 /* Build configuration list for PBXProject "H600Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7466283225A83059001BA9A9;
+			productRefGroup = 7466283C25A83059001BA9A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7466283A25A83059001BA9A9 /* H600Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7466283925A83059001BA9A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7466284E25A8305A001BA9A9 /* LaunchScreen.storyboard in Resources */,
+				7466284B25A83059001BA9A9 /* Assets.xcassets in Resources */,
+				7466284925A83059001BA9A9 /* Main.storyboard in Resources */,
+				7466286925A83094001BA9A9 /* CRH600ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7466283725A83059001BA9A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7466287A25A83886001BA9A9 /* CRECGResultModel.m in Sources */,
+				7466284625A83059001BA9A9 /* ViewController.m in Sources */,
+				7466286825A83094001BA9A9 /* CRH600ViewController.m in Sources */,
+				7466284025A83059001BA9A9 /* AppDelegate.m in Sources */,
+				7466285125A8305A001BA9A9 /* main.m in Sources */,
+				7466284325A83059001BA9A9 /* SceneDelegate.m in Sources */,
+				7466287B25A83886001BA9A9 /* CRPC80BDisplayView.m in Sources */,
+				7466287925A83886001BA9A9 /* CRResult.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7466284725A83059001BA9A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7466284825A83059001BA9A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7466284C25A8305A001BA9A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7466284D25A8305A001BA9A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7466285225A8305A001BA9A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7466285325A8305A001BA9A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7466285525A8305A001BA9A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L79NFY6463;
+				INFOPLIST_FILE = H600Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/H600Demo/SDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.creative.H600Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7466285625A8305A001BA9A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L79NFY6463;
+				INFOPLIST_FILE = H600Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/H600Demo/SDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.creative.H600Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7466283625A83059001BA9A9 /* Build configuration list for PBXProject "H600Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7466285225A8305A001BA9A9 /* Debug */,
+				7466285325A8305A001BA9A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7466285425A8305A001BA9A9 /* Build configuration list for PBXNativeTarget "H600Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7466285525A8305A001BA9A9 /* Debug */,
+				7466285625A8305A001BA9A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7466283325A83059001BA9A9 /* Project object */;
+}

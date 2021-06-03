@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74104D9A259AD02800A64FA3 /* CRECGResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74104D98259AD02800A64FA3 /* CRECGResultModel.m */; };
+		7418BACD259C5D42000F28B3 /* CRResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7418BACC259C5D42000F28B3 /* CRResult.m */; };
+		74549C4625995F66002657FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74549C4525995F66002657FA /* AppDelegate.m */; };
+		74549C4925995F66002657FA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74549C4825995F66002657FA /* SceneDelegate.m */; };
+		74549C4C25995F66002657FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74549C4B25995F66002657FA /* ViewController.m */; };
+		74549C4F25995F66002657FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74549C4D25995F66002657FA /* Main.storyboard */; };
+		74549C5125995F67002657FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74549C5025995F67002657FA /* Assets.xcassets */; };
+		74549C5425995F67002657FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74549C5225995F67002657FA /* LaunchScreen.storyboard */; };
+		74549C5725995F67002657FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74549C5625995F67002657FA /* main.m */; };
+		74549C6225996959002657FA /* PC300ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74549C6025996959002657FA /* PC300ViewController.m */; };
+		74549C6325996959002657FA /* PC300ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74549C6125996959002657FA /* PC300ViewController.xib */; };
+		74549C832599CF4B002657FA /* CRPC80BDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74549C812599CF4B002657FA /* CRPC80BDisplayView.m */; };
+		74549C872599CF5D002657FA /* CRHeartLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74549C862599CF5D002657FA /* CRHeartLiveView.m */; };
+		745B60B82668D34100D2D4C7 /* libCRPC300SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 745B60B72668D34100D2D4C7 /* libCRPC300SDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		74104D98259AD02800A64FA3 /* CRECGResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRECGResultModel.m; sourceTree = "<group>"; };
+		7418BAC9259C554C000F28B3 /* CRECGResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRECGResultModel.h; sourceTree = "<group>"; };
+		7418BACB259C5D42000F28B3 /* CRResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRResult.h; sourceTree = "<group>"; };
+		7418BACC259C5D42000F28B3 /* CRResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRResult.m; sourceTree = "<group>"; };
+		74549C4125995F66002657FA /* PC-300Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PC-300Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74549C4425995F66002657FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		74549C4525995F66002657FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		74549C4725995F66002657FA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		74549C4825995F66002657FA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		74549C4A25995F66002657FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		74549C4B25995F66002657FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		74549C4E25995F66002657FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74549C5025995F67002657FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74549C5325995F67002657FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74549C5525995F67002657FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74549C5625995F67002657FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74549C5F25996959002657FA /* PC300ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PC300ViewController.h; sourceTree = "<group>"; };
+		74549C6025996959002657FA /* PC300ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PC300ViewController.m; sourceTree = "<group>"; };
+		74549C6125996959002657FA /* PC300ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PC300ViewController.xib; sourceTree = "<group>"; };
+		74549C6B2599714F002657FA /* CRBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBleDevice.h; sourceTree = "<group>"; };
+		74549C702599714F002657FA /* CRBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBlueToothManager.h; sourceTree = "<group>"; };
+		74549C7825997199002657FA /* CRPC_300SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPC_300SDK.h; sourceTree = "<group>"; };
+		74549C812599CF4B002657FA /* CRPC80BDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPC80BDisplayView.m; sourceTree = "<group>"; };
+		74549C822599CF4B002657FA /* CRPC80BDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPC80BDisplayView.h; sourceTree = "<group>"; };
+		74549C852599CF5D002657FA /* CRHeartLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHeartLiveView.h; sourceTree = "<group>"; };
+		74549C862599CF5D002657FA /* CRHeartLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRHeartLiveView.m; sourceTree = "<group>"; };
+		745B60B72668D34100D2D4C7 /* libCRPC300SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCRPC300SDK.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74549C3E25995F66002657FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745B60B82668D34100D2D4C7 /* libCRPC300SDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74549C3825995F66002657FA = {
+			isa = PBXGroup;
+			children = (
+				74549C4325995F66002657FA /* PC-300Demo */,
+				74549C4225995F66002657FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74549C4225995F66002657FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74549C4125995F66002657FA /* PC-300Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74549C4325995F66002657FA /* PC-300Demo */ = {
+			isa = PBXGroup;
+			children = (
+				74549C4425995F66002657FA /* AppDelegate.h */,
+				74549C4525995F66002657FA /* AppDelegate.m */,
+				74549C4725995F66002657FA /* SceneDelegate.h */,
+				74549C4825995F66002657FA /* SceneDelegate.m */,
+				74549C4A25995F66002657FA /* ViewController.h */,
+				74549C4B25995F66002657FA /* ViewController.m */,
+				74549C5F25996959002657FA /* PC300ViewController.h */,
+				74549C6025996959002657FA /* PC300ViewController.m */,
+				74549C6125996959002657FA /* PC300ViewController.xib */,
+				74549C852599CF5D002657FA /* CRHeartLiveView.h */,
+				74549C862599CF5D002657FA /* CRHeartLiveView.m */,
+				74549C822599CF4B002657FA /* CRPC80BDisplayView.h */,
+				74549C812599CF4B002657FA /* CRPC80BDisplayView.m */,
+				7418BAC9259C554C000F28B3 /* CRECGResultModel.h */,
+				74104D98259AD02800A64FA3 /* CRECGResultModel.m */,
+				7418BACB259C5D42000F28B3 /* CRResult.h */,
+				7418BACC259C5D42000F28B3 /* CRResult.m */,
+				74549C692599714F002657FA /* SDK */,
+				74549C4D25995F66002657FA /* Main.storyboard */,
+				74549C5025995F67002657FA /* Assets.xcassets */,
+				74549C5225995F67002657FA /* LaunchScreen.storyboard */,
+				74549C5525995F67002657FA /* Info.plist */,
+				74549C5625995F67002657FA /* main.m */,
+			);
+			path = "PC-300Demo";
+			sourceTree = "<group>";
+		};
+		74549C692599714F002657FA /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				74549C702599714F002657FA /* CRBlueToothManager.h */,
+				74549C6B2599714F002657FA /* CRBleDevice.h */,
+				74549C7825997199002657FA /* CRPC_300SDK.h */,
+				745B60B72668D34100D2D4C7 /* libCRPC300SDK.a */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74549C4025995F66002657FA /* PC-300Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74549C5A25995F67002657FA /* Build configuration list for PBXNativeTarget "PC-300Demo" */;
+			buildPhases = (
+				74549C3D25995F66002657FA /* Sources */,
+				74549C3E25995F66002657FA /* Frameworks */,
+				74549C3F25995F66002657FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PC-300Demo";
+			productName = "PC-300Demo";
+			productReference = 74549C4125995F66002657FA /* PC-300Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74549C3925995F66002657FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					74549C4025995F66002657FA = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 74549C3C25995F66002657FA /* Build configuration list for PBXProject "PC-300Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74549C3825995F66002657FA;
+			productRefGroup = 74549C4225995F66002657FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74549C4025995F66002657FA /* PC-300Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74549C3F25995F66002657FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74549C5425995F67002657FA /* LaunchScreen.storyboard in Resources */,
+				74549C6325996959002657FA /* PC300ViewController.xib in Resources */,
+				74549C5125995F67002657FA /* Assets.xcassets in Resources */,
+				74549C4F25995F66002657FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74549C3D25995F66002657FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74549C4C25995F66002657FA /* ViewController.m in Sources */,
+				74104D9A259AD02800A64FA3 /* CRECGResultModel.m in Sources */,
+				74549C4625995F66002657FA /* AppDelegate.m in Sources */,
+				74549C5725995F67002657FA /* main.m in Sources */,
+				74549C6225996959002657FA /* PC300ViewController.m in Sources */,
+				7418BACD259C5D42000F28B3 /* CRResult.m in Sources */,
+				74549C4925995F66002657FA /* SceneDelegate.m in Sources */,
+				74549C832599CF4B002657FA /* CRPC80BDisplayView.m in Sources */,
+				74549C872599CF5D002657FA /* CRHeartLiveView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		74549C4D25995F66002657FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74549C4E25995F66002657FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74549C5225995F67002657FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74549C5325995F67002657FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74549C5825995F67002657FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		74549C5925995F67002657FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74549C5B25995F67002657FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L79NFY6463;
+				INFOPLIST_FILE = "PC-300Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PC-300Demo/SDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creative.PC-300Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		74549C5C25995F67002657FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L79NFY6463;
+				INFOPLIST_FILE = "PC-300Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PC-300Demo/SDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creative.PC-300Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74549C3C25995F66002657FA /* Build configuration list for PBXProject "PC-300Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74549C5825995F67002657FA /* Debug */,
+				74549C5925995F67002657FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74549C5A25995F67002657FA /* Build configuration list for PBXNativeTarget "PC-300Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74549C5B25995F67002657FA /* Debug */,
+				74549C5C25995F67002657FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74549C3925995F66002657FA /* Project object */;
+}
