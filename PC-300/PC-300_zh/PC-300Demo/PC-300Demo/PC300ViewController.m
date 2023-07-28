@@ -6,8 +6,7 @@
 //
 
 #import "PC300ViewController.h"
-#import "CRBlueToothManager.h"
-#import "CRPC_300SDK.h"
+#import <CRPC300Lib/CRPC300Lib.h>
 #import "CRHeartLiveView.h"
 #import "CRPC80BDisplayView.h"
 #import "CRResult.h"
@@ -115,7 +114,8 @@
     NSMutableArray *fitports = [NSMutableArray array];
     for (CRBleDevice *device in deviceList) {
         if ([device.bleName containsString:pc300] ||
-            [device.bleName containsString:pc200]) {
+            [device.bleName containsString:pc200] ||
+            [device.bleName containsString:PC303_CMI]) {
             [fitports addObject:device];
         }
     }

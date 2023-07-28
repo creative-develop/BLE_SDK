@@ -11,6 +11,9 @@
 #define pc100 @"PC-100"
 #define pc200 @"PC-200"
 #define pc300 @"PC_300"
+
+#define PC303_CMI @"CMI_PC303"
+
 #define pc80b @"PC80B"
 #define h600 @"H600"
 #define pod @"POD"
@@ -47,7 +50,7 @@ typedef NS_ENUM(NSUInteger, CRBLESDKConnectionState)
     CRBLESDKConnectionStateInConnect,
 };
 
-/** 血氧波形数据 */
+/** Oxi waveform data */
 struct waveData
 {
     int waveValue;
@@ -57,14 +60,14 @@ struct waveData
 #define CRBLEMANAGERWILLDISCONNECT @"CRBLEMANAGERWILLDISCONNECT"
 
 @interface CRBleDevice : NSObject
-/** 设备属性 */
-@property (nonatomic, strong,readonly) CBPeripheral *peripheral;
-/** 写特征 */
+/** peripheral */
+@property (nonatomic, strong, readonly) CBPeripheral *peripheral;
+/** write characteristic */
 @property (nonatomic, strong) CBCharacteristic *writeCharact;
-/** 设备的连接状态 */
+/** connection state */
 @property (nonatomic, assign) CRBLESDKConnectionState connectionState;
-
-@property (nonatomic, copy)NSString *bleName;
+/** peripheral name*/
+@property (nonatomic, copy) NSString *bleName;
 
 - (instancetype)initDeviceWithPeripheral:(CBPeripheral *)peripheral;
 - (instancetype)initDeviceWithPeripheral:(CBPeripheral *)peripheral BLEName:(NSString *)bleName;

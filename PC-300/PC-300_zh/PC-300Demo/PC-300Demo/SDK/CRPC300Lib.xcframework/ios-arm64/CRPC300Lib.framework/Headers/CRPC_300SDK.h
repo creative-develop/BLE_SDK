@@ -7,108 +7,110 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CRBleDevice.h"
-/* 设备电池充电状态 */
+@class CRBleDevice;
+
+
+/* Battery state */
 typedef NS_ENUM(NSUInteger, CRPC_300SDKBattaryChargingState)
 {
-    /* 不在充电 */  
+    /* Normal */
     CRPC_300SDKBattaryChargingStateNotInCharging = 0,
-    /* 正在充电 */
+    /* Charge */
     CRPC_300SDKBattaryChargingStateInCharging,
-    /* 充电完成 */
+    /* full charge */
     CRPC_300SDKBattaryChargingStateChargingComplete,
 };
-/** 设备模块状态 */
+/** Module state */
 typedef NS_ENUM(NSUInteger,  CRPC_300SDKModuleState)
 {
-    /* 模块测量结束 */
+    /* Measurement completed */
     CRPC_300SDKModuleStateMessurementComplete = 1,
     /* 模块忙活测量正在进行中 */
     CRPC_300SDKModuleStateBusy,
-    /* 模块故障或未接入 */
+    /* Error */
     CRPC_300SDKModuleStateFail,
 };
 
-/** 血压模式 */
+/** BP mode */
 typedef NS_ENUM(NSUInteger, CRPC_300SDKNIBPWorkMode)
 {
-    /* 成人模式 */
+    /* adult mode */
     CRPC_300SDKNIBPWorkModeAdult = 0,
-    /* 新生儿模式 */
+    /* baby mode */
     CRPC_300SDKNIBPWorkModeNewborns,
-    /* 儿童模式 */
+    /* kid mode */
     CRPC_300SDKNIBPWorkModeChild,
 };
 
 @class CRPC_300SDK;
 @protocol CRPC_300SDKDelegate <NSObject>
-#pragma mark - --------------------------- 数据反馈
-/** 获取产品名称 */
+#pragma mark - --------------------------- response
+/** product name */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getProductName:(NSString *)name FromDevice:(CRBleDevice *)device;
 
 /*!
- *   @descrip 获取产品信息(软硬件版本,电池电量等级)
- *   @param softWareV 软件版本
- *   @param hardWareV 硬件版本
- *   @param battaryLevle 电池电量等级
- *   @param chargingState 电池充电状态
+ *   @brief product information
+ *   @param softWareV software version
+ *   @param hardWareV hardware version
+ *   @param battaryLevle battery level
+ *   @param chargingState battery state
  
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getDeviceInfoWithSoftWareVersion:(NSString *)softWareV HardWareVersion:(NSString *)hardWareV BattaryLevel:(int)battaryLevle BattaryChargingState:(CRPC_300SDKBattaryChargingState)chargingState  FromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 收到设备查询时间的请求
+ *  @brief request for sync device time
  *
  */
 - (void)getRequestForSetDeviceTimeFromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 获取客户ID
- *  @param clientID 客户ID
+ *  @brief get client id
+ *  @param clientID client id
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getClientID:(int)clientID FromDevice:(CRBleDevice *)device;
 
 /*!
- * @descrip 获取血压测量的 启动/停止
- * @param start 血压测量控制.YES:表示血压测量开始 ,NO:表示血压测量停止
+ * @brief response of start or stop to meassure
+ * @param start BP state.   YES: start  ,NO: stop
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK bloodPressureActionStart:(BOOL)start  FromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 获取血压工作模式
- *  @param workMode     设备当前血压工作模式
+ *  @brief BP work mode
+ *  @param workMode     the device current BP work mode
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getNIBPWorkMode:(CRPC_300SDKNIBPWorkMode)workMode  FromDevice:(CRBleDevice *)device;
 
 /*!
- *   @descrip 获取血压测量结果
- *   @param sys 收缩压
- *   @param dia 舒张压
- *   @param map 平均压
- *   @param pr 脉率
- *   @param hrState 心率结果.YES:心率正常，NO:心率不齐
+ *   @brief BP results
+ *   @param sys SYS
+ *   @param dia DIA
+ *   @param map mean pressure
+ *   @param pr Pulse rate
+ *   @param hrState HR result. YES: ，NO:心率不齐
  
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getNIBPMessurementResultWithSys:(int)sys Dia:(int)dia Map:(int)map Pr:(int)pr HeartRateState:(BOOL)hrState Rank:(int)rank  FromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 获取到血压测量错误结果
- *  @param errorType    错误类型
- *  @param errorCode    错误编码
+ *  @brief BP measurement error occurred
+ *  @param errorType    error type
+ *  @param errorCode    error code
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getNIBPMessurementErrorWithErrorType:(int)errorType ErrorCode:(int)errorCode  FromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 获取血压测量实时数据
- *  @param pressure    当前压力值
- *  @param heartBeat    心跳标记. YES:表示有心跳, NO:表示无心跳.
+ *  @brief real-time pressure
+ *  @param pressure    current pressure
+ *  @param heartBeat    heartbeat. YES: , NO:
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getNIBPRealTimeDataWithPressure:(int)pressure HeartBeat:(BOOL)heartBeat  FromDevice:(CRBleDevice *)device;
@@ -116,55 +118,55 @@ typedef NS_ENUM(NSUInteger, CRPC_300SDKNIBPWorkMode)
 
 /*!
  *  @method
- *  @descrip 获取血氧波形包数据
- *  @param waveData    波形数据
- *  @param dataLength    波形数据个数
+ *  @brief Oxygen waveform data
+ *  @param waveData    waveform data
+ *  @param dataLength    Length
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getSpo2WaveDatas:(struct waveData *)waveData DataLength:(int)dataLength  FromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 血氧参数数据包
- *  @param spo2    血氧值 单位:%
- *  @param pr    脉率值 单位:bpm
- *  @param pi    灌注指数 单位:‰
- *  @param leadOff     探头是否脱落.
- *  @param mode     测量模式.0:成人模式, 1:新生儿模式, 2:动物模式
+ *  @brief Oxygen parameters
+ *  @param spo2    SpO2  Unit: %
+ *  @param pr        PR     Unit: bpm or  /min
+ *  @param pi       PI Unit:‰
+ *  @param leadOff     lead state: YES: lead off NO: lead on
+ *  @param mode    meassurement mode. 0:adult, 1:baby, 2:animal
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getSpo2ParamDatasWithSpo2Value:(int)spo2 PR:(int)pr PI:(int)pi LeadOff:(BOOL)leadOff Mode:(int)mode  FromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 获取到体温值
- *  @param tempValue     温度值
- *  @param result     温度结果，不为0时，温度值无效
+ *  @brief temperature
+ *  @param tempValue     temperature value
+ *  @param result     result，if result > 0, invalid
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getBodyTemparature:(float)tempValue Result:(int)result  FromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 获取到血糖值
- *  @param result    测量结果，0:正常血糖值有效. 1:偏低，血糖值无效且为0. 2:偏高，血糖值无效且为0(此参数对百捷无效)
- *  @param gluValue    血糖值 该值为实际值的10倍，例如:gluValue 为108，则实际血糖值为10.8mmol/L
- *  @param unitType    血糖值单位 0：mmol/L    1:mg/dL
+ *  @brief Glucose
+ *  @param result     0: normal. 1:low，invalid and value is 0.  2: high，invalid and value is 0   (百捷invalid)
+ *  @param gluValue    value * 10，e.g.: the gluValue is 108， really glucose value = 108 * 0.1 mmol/L
+ *  @param unitType    unit 0：mmol/L    1:mg/dL
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getBloodGlucoseResult:(int)result GluValue:(int)gluValue UnitType:(int)unitType FromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 获取到血糖仪类型 (部分PC-200可用)
- *  @param type    类型，1:爱奥乐，2：百捷
+ *  @brief the data from Which Glucose meter (some PC200 is supported)
+ *  @param type    type，1:爱奥乐，2：百捷
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getGlucoseDeviceType:(int)type FromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 成功设置血糖仪类型 (部分PC-200/PC300可用)
+ *  @brief the glucose meter type setting success (some PC200 and some PC300 is supported)
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK setGlucoseDeviceTypeSuccessFromDevice:(CRBleDevice *)device;
@@ -172,9 +174,9 @@ typedef NS_ENUM(NSUInteger, CRPC_300SDKNIBPWorkMode)
 
 /*!
  *  @method
- *  @descrip 获取到尿酸
- *  @param uaValue   尿酸 该值为实际值的10倍，例如:uaValue 为108，则实际血糖值为10.8mmol/L
- *  @param unitType    尿酸值单位 0：mmol/L    1:mg/dL
+ *  @brief uric acid
+ *  @param uaValue   value * 10，e.g.: uaValue is 108,  the really uric acid value is 10.8mmol/L
+ *  @param unitType    unit 0：mmol/L    1:mg/dL
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getUricAcidValue:(int)uaValue UnitType:(int)unitType FromDevice:(CRBleDevice *)device;
@@ -182,9 +184,9 @@ typedef NS_ENUM(NSUInteger, CRPC_300SDKNIBPWorkMode)
 
 /*!
  *  @method
- *  @descrip 获取到总胆固醇
- *  @param cholValue   总胆固醇 该值为实际值的10倍，例如:cholValue 为108，则实际血糖值为10.8mmol/L
- *  @param unitType    总胆固醇值单位 0：mmol/L    1:mg/dL
+ *  @brief cholesterol
+ *  @param cholValue   value * 10，例如:cholValue is 108，the really cholesterol value is 10.8mmol/L
+ *  @param unitType    unit 0：mmol/L    1:mg/dL
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getCHOLValue:(int)cholValue UnitType:(int)unitType FromDevice:(CRBleDevice *)device;
@@ -192,9 +194,9 @@ typedef NS_ENUM(NSUInteger, CRPC_300SDKNIBPWorkMode)
 
 /*!
  *  @method
- *  @descrip 获取到心电版本
- *  @param softwareV     软件版本
- *  @param hardwareV     硬件版本
+ *  @brief ECG version
+ *  @param softwareV   software
+ *  @param hardwareV     hardware
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getECGSoftwareVersion:(NSString *)softwareV HardwareVersion:(NSString *)hardwareV  FromDevice:(CRBleDevice *)device;
@@ -202,85 +204,80 @@ typedef NS_ENUM(NSUInteger, CRPC_300SDKNIBPWorkMode)
 
 /*!
  *  @method
- *  @descrip 获取到心电开始和停止
- *  @param isStart     开始/停止
+ *  @brief response of start or stop to meassure
+ *  @param isStart     start or stop
  *
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getECGAction:(BOOL)isStart  FromDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 获取到心电测量波形
- *  @param data     波形数据
- *  @param length     波形数据的个数
- *  @param leadoff     脱落标志
- *  @param device     设备
+ *  @descrip ECG waveform
+ *  @param data     waveform data
+ *  @param length     length
+ *  @param leadoff     0: lead on  1: lead off
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getECGWave:(struct waveData*)data DataLength:(int)length Leadoff:(BOOL)leadoff  FromDevice:(CRBleDevice *)device;
 
 
 /*!
  *  @method
- *  @descrip 获取到心电测量结果
- *  @param result     心电结果
- *  @param heartRate     心率
- *  @param device     设备
+ *  @brief ECG measurement result
+ *  @param result     result
+ *  @param heartRate     HR
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK GetECGMessureResult:(int)result HeartRate:(int)heartRate ForDevice:(CRBleDevice *)device;
 
 
 /*!
  *  @method
- *  @descrip 获取到心电增益
- *  @param gain     心电增益
- *  @param device     设备
+ *  @brief gain of ECG
+ *  @param gain     gain
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK GetECGGain:(int)gain ForDevice:(CRBleDevice *)device;
 
 
 /*!
  *  @method
- *  @descrip 获得此次测量的心电位数（8位0~255和12位0~4095）
+ *  @brief 获得此次测量的心电位数（8位0~255和12位0~4095）
  *  @param bit     心电波形位数
- *  @param device     设备
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK GetECGWaveBit:(int)bit ForDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip 获得固件版本
+ *  @brief 获得固件版本 hardware version
  *  @param state     状态(为0时，下位机先复位，可能会断开连接，需要重新连接;为1时，下位机准备就绪;为2时，代表只回应版本号;为0x0F时，无法升级指定MCU)
  *  @param hwVersion     硬件版本（为Nil代表设备为PC-100）
  *  @param swVersion     软件版本（为Nil代表设备为PC-100;为0.0.0.0时，代表没有固件）
- *  @param device     设备
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK GetIAPState:(int)state HardWareVersion:(NSString *)hwVersion SoftWareVersion:(NSString *)swVersion ForDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip  下位机响应启动固件更新命令
- *  @param device     设备
+ *  @brief  下位机响应启动固件更新命令
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK GetUpdateIAPResponceForDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip  获取固件更新进度
+ *  @brief  获取固件更新进度
  *  @param progress     进度(0~1)
- *  @param device     设备
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK GetIAPUpdateProgress:(float)progress ForDevice:(CRBleDevice *)device;
 
 /*!
  *  @method
- *  @descrip  固件更新结束
- *  @param progress     进度(0~1)
- *  @param device     设备
+ *  @brief  固件更新结束
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK IAPUpdateCompleteWithState:(int)state ForDevice:(CRBleDevice *)device;
 
 
-/** 设备即将关机 */
+
+/*!
+ *  @method
+ *  @brief  设备即将关机
+ */
 - (void)aboutToShutDownDevice:(CRBleDevice *)device;
 
 @end
@@ -289,55 +286,65 @@ typedef NS_ENUM(NSUInteger, CRPC_300SDKNIBPWorkMode)
 @interface CRPC_300SDK : NSObject
 /** 代理  */
 @property (nonatomic, weak) id <CRPC_300SDKDelegate>delegate;
+
+
 +(instancetype)shareInstance;
+
 /** 用于处理连接后的任务 */
 - (void)didConnectDevice:(CRBleDevice *)device;
+
 /** 用于处理断开连接后续任务 */
 - (void)willDisconnectWithDevice:(CRBleDevice *)device;
+
 /** 获取到新的数据 */
 - (void)appendingNewData:(NSData *)data FromDevice:(CRBleDevice *)device;
-#pragma mark - --------------------------- 查询命令
-/** 查询产品名称 */
+
+#pragma mark - --------------------------- 查询命令 / query command
+/** 查询产品名称 / query product name */
 - (void)queryForProductNameFromDevice:(CRBleDevice *)device;
 
-/** 查询设备软硬件版本及电池电量 */
+/** 查询设备软硬件版本及电池电量 / query version and battery level */
 - (void)queryForDeviceVerisionInfomationFromDevice:(CRBleDevice *)device;
 
-/** 查询最近一次设备的血压测量结果 */
+/** 查询最近一次设备的血压测量结果  / query the latest BP result*/
 - (void)queryForDeviceLastBloodPressureResultFromDevice:(CRBleDevice *)device;
 
-/** 查询血糖仪类型 （仅部分PC-200可用）1:爱奥乐，2：百捷*/
+/** 查询血糖仪类型 （仅部分PC-200可用）/ query type of glucose meter    1:爱奥乐，2：百捷*/
 - (void)queryForGluDeviceTypeFromDevice:(CRBleDevice *)device;
 
-
-/** 查询最近一次设备的血糖测量结果 */
+/** 查询最近一次设备的血糖测量结果 / query the latest Glucose result */
 - (void)queryForDeviceLastBloodGlucoseResultFromDevice:(CRBleDevice *)device;
 
-/** 查询血压工作模式 */
+/** 查询血压工作模式 /  query the work mode of BP measurement */
 - (void)queryForNIBPWorkModeFromDevice:(CRBleDevice *)device;
 
-/** 查询客户ID */
+/** 查询客户ID  / query client id*/
 - (void)queryForClientIDFromDevice:(CRBleDevice *)device;
 
-#pragma mark - --------------------------- 启动命令
-/** 开始测量血压 */
+#pragma mark - --------------------------- 启动命令 / start command
+/** 开始测量血压 / start  BP measurement*/
 - (void)startBloodPressureMeasurementForDevice:(CRBleDevice *)device;
-/** 开始测量体温 */
+
+/** 开始测量体温 / start  temperature measurement*/
 - (void)startBodyTemparatureMeasurementForDevice:(CRBleDevice *)device;
-/** 开始血压静态压校准 */
+
+/** 开始血压静态压校准 /  Start blood pressure static pressure calibration*/
 - (void)startStaticPressureCalibrationForDevice:(CRBleDevice *)device;
 
-/** 设置血压工作模式 */
+/** 设置血压工作模式 / set work mode of BP measurement */
 - (void)setNIBPWorkMode:(CRPC_300SDKNIBPWorkMode)workMode ForDevice:(CRBleDevice *)device;
-/** 设置设备时间 */
+
+/** 设置设备时间  /  set time*/
 - (void)setDeviceTime:(NSString *)time ForDevice:(CRBleDevice *)device;
-/** 设置心电波形是否为十二位 */
+
+/** 设置心电波形是否为十二位 / set bit */
 - (void)setECGWaveTwelveBit:(BOOL)isTwelve ForDevice:(CRBleDevice *)device;
-/** 设置血糖仪类型 （仅部分PC-200,PC-300可用）1:爱奥乐，2：百捷*/
+
+/** 设置血糖仪类型 （仅部分PC-200,PC-300可用）/ set the type of glucose meter  1:爱奥乐，2：百捷*/
 - (void)setGluDeviceType:(int )type FromDevice:(CRBleDevice *)device;
 
 #pragma mark - --------------------------- 停止命令
-/** 停止测量血压 */
+/** 停止测量血压 / stop BP measurement*/
 - (void)stopBloodPressureMeasurementForDevice:(CRBleDevice *)device;
 
 #pragma mark - --------------------------- 固件升级

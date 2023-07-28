@@ -1,0 +1,6 @@
+framework module CRPC300Lib {
+  umbrella header "CRPC300Lib.h"
+
+  export *
+  module * { export * }
+}

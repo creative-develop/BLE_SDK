@@ -6,8 +6,7 @@
 //
 
 #import "AP20ViewController.h"
-#import "CRBlueToothManager.h"
-#import "CRAP20SDK.h"
+#import <CRAP20Lib/CRAP20Lib.h>
 #import "CRHeartLiveView.h"
 #import "CRWavesView.h"
 
@@ -91,6 +90,10 @@
     //取消
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:nil];
     [alertVC addAction:cancelAction];
+    if ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPhone) {//防止在IPAD挂断
+        alertVC.popoverPresentationController.sourceView = self.view;
+        alertVC.popoverPresentationController.sourceRect = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, 0);
+    }
     [self presentViewController:alertVC animated:YES completion:nil];
 }
 

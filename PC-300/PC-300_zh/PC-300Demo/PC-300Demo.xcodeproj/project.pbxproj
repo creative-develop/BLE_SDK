@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65E30F112A6525FE002F66AE /* CRPC300Lib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E30F102A6525FE002F66AE /* CRPC300Lib.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
 		74104D9A259AD02800A64FA3 /* CRECGResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74104D98259AD02800A64FA3 /* CRECGResultModel.m */; };
 		7418BACD259C5D42000F28B3 /* CRResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7418BACC259C5D42000F28B3 /* CRResult.m */; };
 		74549C4625995F66002657FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74549C4525995F66002657FA /* AppDelegate.m */; };
@@ -20,10 +21,10 @@
 		74549C6325996959002657FA /* PC300ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74549C6125996959002657FA /* PC300ViewController.xib */; };
 		74549C832599CF4B002657FA /* CRPC80BDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74549C812599CF4B002657FA /* CRPC80BDisplayView.m */; };
 		74549C872599CF5D002657FA /* CRHeartLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74549C862599CF5D002657FA /* CRHeartLiveView.m */; };
-		745B60B82668D34100D2D4C7 /* libCRPC300SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 745B60B72668D34100D2D4C7 /* libCRPC300SDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65E30F102A6525FE002F66AE /* CRPC300Lib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CRPC300Lib.xcframework; sourceTree = "<group>"; };
 		74104D98259AD02800A64FA3 /* CRECGResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRECGResultModel.m; sourceTree = "<group>"; };
 		7418BAC9259C554C000F28B3 /* CRECGResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRECGResultModel.h; sourceTree = "<group>"; };
 		7418BACB259C5D42000F28B3 /* CRResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRResult.h; sourceTree = "<group>"; };
@@ -43,14 +44,10 @@
 		74549C5F25996959002657FA /* PC300ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PC300ViewController.h; sourceTree = "<group>"; };
 		74549C6025996959002657FA /* PC300ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PC300ViewController.m; sourceTree = "<group>"; };
 		74549C6125996959002657FA /* PC300ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PC300ViewController.xib; sourceTree = "<group>"; };
-		74549C6B2599714F002657FA /* CRBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBleDevice.h; sourceTree = "<group>"; };
-		74549C702599714F002657FA /* CRBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBlueToothManager.h; sourceTree = "<group>"; };
-		74549C7825997199002657FA /* CRPC_300SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPC_300SDK.h; sourceTree = "<group>"; };
 		74549C812599CF4B002657FA /* CRPC80BDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPC80BDisplayView.m; sourceTree = "<group>"; };
 		74549C822599CF4B002657FA /* CRPC80BDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPC80BDisplayView.h; sourceTree = "<group>"; };
 		74549C852599CF5D002657FA /* CRHeartLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHeartLiveView.h; sourceTree = "<group>"; };
 		74549C862599CF5D002657FA /* CRHeartLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRHeartLiveView.m; sourceTree = "<group>"; };
-		745B60B72668D34100D2D4C7 /* libCRPC300SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCRPC300SDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				745B60B82668D34100D2D4C7 /* libCRPC300SDK.a in Frameworks */,
+				65E30F112A6525FE002F66AE /* CRPC300Lib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,10 +111,7 @@
 		74549C692599714F002657FA /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				74549C702599714F002657FA /* CRBlueToothManager.h */,
-				74549C6B2599714F002657FA /* CRBleDevice.h */,
-				74549C7825997199002657FA /* CRPC_300SDK.h */,
-				745B60B72668D34100D2D4C7 /* libCRPC300SDK.a */,
+				65E30F102A6525FE002F66AE /* CRPC300Lib.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
