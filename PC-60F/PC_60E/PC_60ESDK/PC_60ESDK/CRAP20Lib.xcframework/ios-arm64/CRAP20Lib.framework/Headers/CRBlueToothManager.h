@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CRBleDevice.h"
+#import <CoreBluetooth/CoreBluetooth.h>
+@class CRBleDevice; 
 
 @class CRBlueToothManager;
 /** SDK工作模式 */

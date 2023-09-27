@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CRBleDevice.h"
+@class CRBleDevice;
 
 
 
@@ -136,8 +136,6 @@ typedef NS_ENUM(Byte, CRPC_60FCommanMessureStage)
 @end
 
 @protocol CRAP20SDKDelegate <NSObject>
-
-@optional
 #pragma mark -  通用回调
 /** 血氧波形数据 */
 - (void)ap_20SDK:(CRAP20SDK *)ap_20SDK GetSpo2Wave:(struct waveData*)wave FromDevice:(CRBleDevice *)device;
@@ -198,7 +196,7 @@ typedef NS_ENUM(Byte, CRPC_60FCommanMessureStage)
 #pragma mark -  PC-60E 使用回调 （新增菜单设置与查询，2020年09月07日）
 /**
  * 菜单设置成功
- * @param failOrSuccess  00设置失败，01设置成功。
+ * @param failOrSuccess  00设置失败，01设置成功。 设置结果，按位与, 1为成功 (0~4位：血氧低，脉率高，脉率低，测量类型，蜂鸣器开关，旋转开关)
  */
 - (void)ap_20SDK:(CRAP20SDK *)ap_20SDK setMenuSuccess:(BOOL)failOrSuccess FromDevice:(CRBleDevice *)device;
 
@@ -303,12 +301,12 @@ typedef NS_ENUM(Byte, CRPC_60FCommanMessureStage)
 /**
  @description 设置菜单
 
- @param lowSpO2   低血氧阈值 （80~99）
- @param highPr   高脉率阈值       (100~240)
- @param lowPr   低脉率阈值          (30~60)
- @param spot   点测或连测，1点测，2连测
- @param beepOn   蜂鸣器开关,1开  ,2关
- @param rotateOn   旋转开关,1开  ,2关
+ @param lowSpO2   低血氧阈值 （60~100）  0表示不设置
+ @param highPr   高脉率阈值       (0~255)     0表示不设置
+ @param lowPr   低脉率阈值          (0~255)    0表示不设置
+ @param spot   点测或连测，1点测，2连测   0表示不设置
+ @param beepOn   蜂鸣器开关,1开  ,2关         0表示不设置
+ @param rotateOn   旋转开关,1开  ,2关         0表示不设置
  */
 - (void)setMenuOptions:(int)lowSpO2
                 highPR:(int)highPr

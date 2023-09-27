@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65D36F6F2AC3FAB40028FBA5 /* CRAP20Lib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D36F6E2AC3FAB40028FBA5 /* CRAP20Lib.xcframework */; };
 		747BB9A8256E01FB0009AD9A /* CRPodDeviceMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 747BB9A6256E01FB0009AD9A /* CRPodDeviceMenuView.m */; };
-		7493EEF825BA78D500640D17 /* libCRAP20SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7493EEF725BA78D500640D17 /* libCRAP20SDK.a */; };
 		74B0893E256665E2003E0584 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B0893D256665E2003E0584 /* AppDelegate.m */; };
 		74B08944256665E2003E0584 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B08943256665E2003E0584 /* ViewController.m */; };
 		74B08947256665E2003E0584 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B08945256665E2003E0584 /* Main.storyboard */; };
@@ -19,12 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65D36F6E2AC3FAB40028FBA5 /* CRAP20Lib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CRAP20Lib.xcframework; sourceTree = "<group>"; };
 		747BB9A6256E01FB0009AD9A /* CRPodDeviceMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPodDeviceMenuView.m; sourceTree = "<group>"; };
 		747BB9A7256E01FB0009AD9A /* CRPodDeviceMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPodDeviceMenuView.h; sourceTree = "<group>"; };
-		7493EEF425BA78D500640D17 /* CRBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBlueToothManager.h; sourceTree = "<group>"; };
-		7493EEF525BA78D500640D17 /* CRBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBleDevice.h; sourceTree = "<group>"; };
-		7493EEF625BA78D500640D17 /* CRAP20SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRAP20SDK.h; sourceTree = "<group>"; };
-		7493EEF725BA78D500640D17 /* libCRAP20SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCRAP20SDK.a; sourceTree = "<group>"; };
 		74B08939256665E2003E0584 /* PC_60ESDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PC_60ESDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B0893C256665E2003E0584 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74B0893D256665E2003E0584 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7493EEF825BA78D500640D17 /* libCRAP20SDK.a in Frameworks */,
+				65D36F6F2AC3FAB40028FBA5 /* CRAP20Lib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,10 +88,7 @@
 		74B0895B25666C1D003E0584 /* PC_60ESDK */ = {
 			isa = PBXGroup;
 			children = (
-				7493EEF625BA78D500640D17 /* CRAP20SDK.h */,
-				7493EEF525BA78D500640D17 /* CRBleDevice.h */,
-				7493EEF425BA78D500640D17 /* CRBlueToothManager.h */,
-				7493EEF725BA78D500640D17 /* libCRAP20SDK.a */,
+				65D36F6E2AC3FAB40028FBA5 /* CRAP20Lib.xcframework */,
 			);
 			path = PC_60ESDK;
 			sourceTree = "<group>";

@@ -6,8 +6,7 @@
 //
 
 #import "ViewController.h"
-#import "CRBlueToothManager.h"
-#import "CRAP20SDK.h"
+#import <CRAP20Lib/CRAP20Lib.h>
 #import "CRHeartLiveView.h"
 #import "CRPodDeviceMenuView.h"
 
@@ -137,6 +136,34 @@
 //从获取的BLE设备列表中筛选出PC_60E
 - (void)bleManager:(CRBlueToothManager *)manager didSearchCompleteWithResult:(NSArray<CRBleDevice *> *)deviceList {
     NSMutableArray *array = [[NSMutableArray alloc] init];
+    /*
+     Those devices is supported by the lib.
+     #define pod @"POD"
+     #define ap_10 @"AP-10"
+     #define ap_20 @"AP-20"
+     #define sp_20 @"SP-20"
+     #define pc_60nw @"PC-60NW"
+     #define pc_60nw_1 @"PC-60NW-1"
+
+     #define pc_68b @"PC-68B"
+     #define pc_66b @"PC-66B"
+
+     #define pc_60e @"PC-60E"
+     #define pc_60b @"PC-60B"
+
+
+     #define pc_60f @"PC-60F"
+     #define pf_10  @"PF-10"
+     #define pf_20  @"PF-20"
+     #define OxySmart @"OxySmart "  //定制版PC-60F
+     #define BabyOximeter @"BabyOximeter"
+     #define OxyKnight @"OxyKnight"//BabyOximeter改名
+
+     #define s5w @"S5W"
+     #define s6w @"S6W"
+     #define s7w @"S7W"
+     #define s7bw @"S7BW"
+     */
     for (CRBleDevice *device in deviceList) {
         if ([device.bleName containsString:pc_60e] ||
             [device.bleName containsString:pc_60f] ||
