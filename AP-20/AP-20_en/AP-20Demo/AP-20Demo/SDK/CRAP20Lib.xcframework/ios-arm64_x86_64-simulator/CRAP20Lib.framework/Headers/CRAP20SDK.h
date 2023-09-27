@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class CRBleDevice; 
+@class CRBleDevice;
 
 
 

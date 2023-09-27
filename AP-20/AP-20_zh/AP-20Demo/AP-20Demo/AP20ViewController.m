@@ -6,8 +6,7 @@
 //
 
 #import "AP20ViewController.h"
-#import "CRBlueToothManager.h"
-#import "CRAP20SDK.h"
+#import <CRAP20Lib/CRAP20Lib.h>
 #import "CRHeartLiveView.h"
 #import "CRWavesView.h"
 

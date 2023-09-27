@@ -1,6 +1,0 @@
-framework module CRAP20Lib {
-  umbrella header "CRAP20Lib.h"
-
-  export *
-  module * { export * }
-}

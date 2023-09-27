@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65D36F6D2AC3F98F0028FBA5 /* CRAP20Lib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D36F6C2AC3F98F0028FBA5 /* CRAP20Lib.xcframework */; };
 		7464971B25941FFB0032F8E7 /* AP20ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7464971925941FFB0032F8E7 /* AP20ViewController.m */; };
 		7464971C25941FFB0032F8E7 /* AP20ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7464971A25941FFB0032F8E7 /* AP20ViewController.xib */; };
 		7466437525956E7400250E16 /* CRWavesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7466437425956E7400250E16 /* CRWavesView.m */; };
@@ -17,10 +18,10 @@
 		747F8DD425932714008B3E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 747F8DD325932714008B3E73 /* main.m */; };
 		747F8DDE25932765008B3E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 747F8DDD25932765008B3E73 /* AppDelegate.m */; };
 		747F8DED259328DE008B3E73 /* CRHeartLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 747F8DEB259328DE008B3E73 /* CRHeartLiveView.m */; };
-		74B64BEB25AC5F25007C8646 /* libCRAP20SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B64BEA25AC5F25007C8646 /* libCRAP20SDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65D36F6C2AC3F98F0028FBA5 /* CRAP20Lib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CRAP20Lib.xcframework; sourceTree = "<group>"; };
 		7464971825941FFB0032F8E7 /* AP20ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AP20ViewController.h; sourceTree = "<group>"; };
 		7464971925941FFB0032F8E7 /* AP20ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AP20ViewController.m; sourceTree = "<group>"; };
 		7464971A25941FFB0032F8E7 /* AP20ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AP20ViewController.xib; sourceTree = "<group>"; };
@@ -38,10 +39,6 @@
 		747F8DDD25932765008B3E73 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		747F8DEB259328DE008B3E73 /* CRHeartLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRHeartLiveView.m; sourceTree = "<group>"; };
 		747F8DEC259328DE008B3E73 /* CRHeartLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHeartLiveView.h; sourceTree = "<group>"; };
-		74B64BE725AC5F25007C8646 /* CRBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBlueToothManager.h; sourceTree = "<group>"; };
-		74B64BE825AC5F25007C8646 /* CRAP20SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRAP20SDK.h; sourceTree = "<group>"; };
-		74B64BE925AC5F25007C8646 /* CRBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBleDevice.h; sourceTree = "<group>"; };
-		74B64BEA25AC5F25007C8646 /* libCRAP20SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCRAP20SDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B64BEB25AC5F25007C8646 /* libCRAP20SDK.a in Frameworks */,
+				65D36F6D2AC3F98F0028FBA5 /* CRAP20Lib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +96,7 @@
 		747F8DE12593289F008B3E73 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				74B64BE825AC5F25007C8646 /* CRAP20SDK.h */,
-				74B64BE925AC5F25007C8646 /* CRBleDevice.h */,
-				74B64BE725AC5F25007C8646 /* CRBlueToothManager.h */,
-				74B64BEA25AC5F25007C8646 /* libCRAP20SDK.a */,
+				65D36F6C2AC3F98F0028FBA5 /* CRAP20Lib.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
