@@ -8,11 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
-#define pc100 @"PC-100"
-#define pc200 @"PC-200"
-#define pc300 @"PC_300"
-#define pc80b @"PC80B"
-#define h600 @"H600"
+
 #define pod @"POD"
 #define ap_10 @"AP-10"
 #define ap_20 @"AP-20"
@@ -28,12 +24,16 @@
 
 
 #define pc_60f @"PC-60F"
+#define pf_10  @"PF-10"
+#define pf_20  @"PF-20"
 #define OxySmart @"OxySmart "  //定制版PC-60F
 #define BabyOximeter @"BabyOximeter"
 #define OxyKnight @"OxyKnight"//BabyOximeter改名
 
-#define eBody_Scale @"eBody-Scale"
-#define AM300 @"AM300"
+#define s5w @"S5W"
+#define s6w @"S6W"
+#define s7w @"S7W"
+#define s7bw @"S7BW"
 
 
 /** 连接设备状态码 */

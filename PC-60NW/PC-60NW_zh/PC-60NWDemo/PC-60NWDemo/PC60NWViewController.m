@@ -7,8 +7,7 @@
 
 #import "PC60NWViewController.h"
 #import "CRHeartLiveView.h"
-#import "CRBlueToothManager.h"
-#import "CRAP20SDK.h"
+#import <CRAP20Lib/CRAP20Lib.h>
 
 @interface PC60NWViewController ()<CRBlueToothManagerDelegate, CRAP20SDKDelegate>
 /** 设备  */
