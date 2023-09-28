@@ -61,7 +61,7 @@
 
 //点击搜索蓝牙
 - (IBAction)searchClieked:(UIBarButtonItem *)sender {
-    [[CRBlueToothManager shareInstance] startSearchDevicesForSeconds:1];
+    [[CRBlueToothManager shareInstance] startSearchDevicesForSeconds:100];
 }
 
 //显示搜索到的蓝牙设备列表，并手动连接
@@ -133,6 +133,11 @@
     else
         NSLog(@"蓝牙已关闭");
 }
+
+- (void)bleManager:(CRBlueToothManager *)manager didFindDevice:(NSArray<CRBleDevice *> *)deviceList {
+    
+}
+
 //从获取的BLE设备列表中筛选出PC_60E
 - (void)bleManager:(CRBlueToothManager *)manager didSearchCompleteWithResult:(NSArray<CRBleDevice *> *)deviceList {
     NSMutableArray *array = [[NSMutableArray alloc] init];
