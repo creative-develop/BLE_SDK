@@ -61,7 +61,7 @@
 
 //点击搜索蓝牙
 - (IBAction)searchClieked:(UIBarButtonItem *)sender {
-    [[CRBlueToothManager shareInstance] startSearchDevicesForSeconds:100];
+    [[CRBlueToothManager shareInstance] startSearchDevicesForSeconds:5];
 }
 
 //显示搜索到的蓝牙设备列表，并手动连接
@@ -172,7 +172,8 @@
     for (CRBleDevice *device in deviceList) {
         if ([device.bleName containsString:pc_60e] ||
             [device.bleName containsString:pc_60f] ||
-            [device.bleName containsString:OxySmart]) {
+            [device.bleName containsString:OxySmart] ||
+            [device.bleName containsString:pod]) {
             [array addObject:device];
         }
     }
