@@ -12,6 +12,7 @@
 #define pc200 @"PC-200"
 #define pc300 @"PC_300"
 
+#define GM_300SNT @"GM_300SNT"
 #define PC303_CMI @"CMI_PC303"
 
 #define pc80b @"PC80B"

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CRBleDevice.h</key>
 		<data>
-		ysZuKt3cV79TKCjt3l8nYh7l2F8=
+		24nEPtsmETq/qaxcGqSaBfPlWgo=
 		</data>
 		<key>Headers/CRBlueToothManager.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		d7sKUC4pXxFt7QPeLUgJLXl3F04=
+		A9qRSjrNesUrh1gk/QueUnMMHoM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		vQ+Nz7VnLGvYZ+UH594kNIz8aDI=
+		kAbfCJb3zLGjAXi6xe9FAbxRZDQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ysZuKt3cV79TKCjt3l8nYh7l2F8=
+			24nEPtsmETq/qaxcGqSaBfPlWgo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZO5VBCtlk5Y/Etn9UoxQIC0g/RzNOhc7G/QMyouh1zo=
+			u+AC/4SFV1ry9GyB+KIJj1cPTjp6E4s4d5pkI9uHLOU=
 			</data>
 		</dict>
 		<key>Headers/CRBlueToothManager.h</key>
@@ -79,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vQ+Nz7VnLGvYZ+UH594kNIz8aDI=
+			kAbfCJb3zLGjAXi6xe9FAbxRZDQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			GgGbfLSo/iEmWacgwUaMA3/lERgy12HFxRn3xKP+p2Q=
+			mgYy0FB8VtnbFoPbnKnZYU3xSZi84OHn3GHYqMraxWs=
 			</data>
 		</dict>
 	</dict>

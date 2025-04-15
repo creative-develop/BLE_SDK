@@ -115,7 +115,8 @@
     for (CRBleDevice *device in deviceList) {
         if ([device.bleName containsString:pc300] ||
             [device.bleName containsString:pc200] ||
-            [device.bleName containsString:PC303_CMI]) {
+            [device.bleName containsString:PC303_CMI] ||
+            [device.bleName containsString:GM_300SNT]) {
             [fitports addObject:device];
         }
     }
