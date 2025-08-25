@@ -42,6 +42,19 @@ typedef NS_ENUM(NSUInteger, CRPC_300SDKNIBPWorkMode)
     CRPC_300SDKNIBPWorkModeChild,
 };
 
+/** temp   mode */
+typedef NS_ENUM(NSUInteger, CRPC_300SDKBodyTemperatureMode)
+{
+    /* 耳温模式 */
+    CRPC_300SDKBodyTemperatureModeEar = 1,
+    /* 成人额温模式 */
+    CRPC_300SDKBodyTemperatureModeAdultForehead,
+    /* 儿童额温模式 */
+    CRPC_300SDKBodyTemperatureModeChildForehead,
+    /* 物温模式 */
+    CRPC_300SDKBodyTemperatureModeThings,
+};
+
 @class CRPC_300SDK;
 @protocol CRPC_300SDKDelegate <NSObject>
 #pragma mark - --------------------------- response
@@ -71,6 +84,21 @@ typedef NS_ENUM(NSUInteger, CRPC_300SDKNIBPWorkMode)
  *  @param clientID client id
  */
 - (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getClientID:(int)clientID FromDevice:(CRBleDevice *)device;
+
+/*!
+ *  @method
+ *  @descrip get temp mode
+ *  @param mode mode
+ *  @param unit 1  ℃，2  °F
+ */
+- (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK getBodyTemperatureMode:(CRPC_300SDKBodyTemperatureMode)mode Unit:(int)unit FromDevice:(CRBleDevice *)device;
+
+/*!
+ *  @method
+ *  @descrip set temp mode
+ */
+- (void)pc_300SDK:(CRPC_300SDK *)pc_300SDK setBodyTemperatureModeSuccessFromDevice:(CRBleDevice *)device;
+
 
 /*!
  * @brief response of start or stop to meassure
@@ -320,6 +348,12 @@ typedef NS_ENUM(NSUInteger, CRPC_300SDKNIBPWorkMode)
 
 /** 查询客户ID  / query client id*/
 - (void)queryForClientIDFromDevice:(CRBleDevice *)device;
+
+/** query temp  mode */
+- (void)queryForBodyTemperatureModeFromDevice:(CRBleDevice *)device;
+
+/** set temp mode（unit：1 ℃；2 ℉） */
+- (void)setBodyTemperatureMode:(CRPC_300SDKBodyTemperatureMode)mode Unit:(int)unit ForDevice:(CRBleDevice *)device;
 
 #pragma mark - --------------------------- 启动命令 / start command
 /** 开始测量血压 / start  BP measurement*/
