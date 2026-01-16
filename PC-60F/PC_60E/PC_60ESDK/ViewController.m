@@ -172,6 +172,7 @@
     for (CRBleDevice *device in deviceList) {
         if ([device.bleName containsString:pc_60e] ||
             [device.bleName containsString:pc_60f] ||
+            [device.bleName containsString:pf_10] ||
             [device.bleName containsString:OxySmart] ||
             [device.bleName containsString:pod]) {
             [array addObject:device];
